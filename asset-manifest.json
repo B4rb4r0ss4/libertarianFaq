@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/libertarianFaq/static/css/main.5151cdba.chunk.css",
-    "main.js": "/libertarianFaq/static/js/main.2a641f24.chunk.js",
-    "main.js.map": "/libertarianFaq/static/js/main.2a641f24.chunk.js.map",
+    "main.js": "/libertarianFaq/static/js/main.b85a9643.chunk.js",
+    "main.js.map": "/libertarianFaq/static/js/main.b85a9643.chunk.js.map",
     "runtime-main.js": "/libertarianFaq/static/js/runtime-main.4f4c407d.js",
     "runtime-main.js.map": "/libertarianFaq/static/js/runtime-main.4f4c407d.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/libertarianFaq/static/css/2.7fc9bc2b.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.6b91206c.chunk.js",
     "static/css/main.5151cdba.chunk.css",
-    "static/js/main.2a641f24.chunk.js"
+    "static/js/main.b85a9643.chunk.js"
   ]
 }
