@@ -1,10 +1,10 @@
-import Faq from "./components/Faq";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import Faq from './components/Faq';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-      <Route exact path="/" component={Faq} />
+      <Route exact path="/libertarianFaq" component={Faq} />
     </Router>
   );
 }
