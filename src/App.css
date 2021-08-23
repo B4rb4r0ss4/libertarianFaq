@@ -1,38 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 17rem;
   pointer-events: none;
+  margin-right: 1rem;
+  animation: image ease 4s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #161616;
+  border: solid 20px white;
+  padding-bottom: 6rem;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #161616;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 8rem;
+  /*justify-content: center;
+  */
+  font-size: 5rem;
   color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+h1 {
+  font-size: 3.5rem;
+  margin-left: 1rem;
+  font-family: 'Raleway', sans-serif;
+  animation: moveInBottom ease 2s;
+  transform-origin: 50% 50%;
+  animation-iteration-count: 1;
+}
+
+nav ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: right;
+  animation: moveInLeft ease 4s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+a {
+  color: #ededed;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-bottom: solid 2px white;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  transition: all 0.5s linear;
+}
+a:hover {
+  background-color: #fdd53f;
+  color: black;
+}
+
+nav li {
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  transition: all 0.5s ease-in-out;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+li h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 900;
+}
+
+li p {
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+
+.Footer {
+  color: #fdd53f;
+  font-size: 1.5rem;
+}
+
+.quote {
+  /*font-family: "Merriweather", serif;
+*/
+  font-family: 'Kalam';
+  animation: animated-text ease 3s;
+  color: #fffffc;
+  margin-top: 8rem;
+  font-size: 1.9rem;
+  padding: 0 30rem;
+  text-align: left;
+  line-height: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote span {
+  font-family: sans-serif;
+
+  color: #fdd53f;
+  margin-top: 0.7rem;
+  font-size: 2rem;
+}
+
+.Footer {
+  color: white;
+}
+.Footer span {
+  color: #fdd53f;
+
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+i {
+  color: #161616;
+}
+.arrow {
+  position: fixed;
+  color: #161616;
+  right: 4%;
+  bottom: 8%;
+  font-size: 4rem;
+  font-weight: 900;
+  cursor: pointer;
+  animation: animateArrow 1.5s infinite linear;
+}
+
+.arrow:hover {
+  transform: scale(102%);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(1500px, 0px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(-1500px, 0px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animated-text {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes animateArrow {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+    opacity: 0;
   }
 }

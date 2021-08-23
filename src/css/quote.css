@@ -1,0 +1,89 @@
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
+}
+
+.quotesUl {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #fdd53f;
+  background-color: ;
+  clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%);
+}
+.quotes {
+  position: relative;
+  width: 25vw;
+  margin-right: 4rem;
+  height: 20rem;
+  margin-left: 3rem;
+  margin-bottom: 15rem;
+  font-size: 2.2rem;
+  color: #3d3d3d;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+
+.quote-image {
+  border-radius: 20rem;
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  height: 9.5rem;
+  width: 9.5rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+}
+.quotes:nth-child(1) {
+  margin-top: 42rem;
+}
+.quotes:nth-child(2) {
+  margin-top: 32rem;
+}
+
+.quotes:nth-child(3) {
+  margin-top: 22rem;
+}
+
+.quotes p {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
+  background-color: #f9d977;
+  padding: 3rem 2.1rem;
+  font-weight: 500;
+  font-family: serif;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.quotes p h4 {
+  margin: auto 0;
+  font-family: sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.quotes span {
+  position: absolute;
+  font-family: 'Raleway', Sans-serif;
+  top: -20%;
+  right: 18%;
+  color: #161616;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.img-quote {
+  transition: all 0.5s ease;
+  margin-left: 1.6rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.07);
+}
+
+.faq-el {
+  width: 100%;
+  background-color: #161616;
+  color: white;
+  padding: 10rem;
+}
